@@ -2,6 +2,8 @@
 body {
   background-color: #efefef;
   font-family: "TS-Reg", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 header {
   width: 1136px;
@@ -34,10 +36,7 @@ p {
 
 .container {
   width: 1136px;
-  padding: 0 24px;
-  margin: 0 165px;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -315,8 +314,12 @@ p {
   display: flex;
   height: 312px;
   width: 848px;
-  overflow: hidden;
+  overflow: scroll;
 }
+
+/* .carroussel-list::-webkit-scrollbar {
+  display: none;
+} */
 
 .carroussel-card {
   flex-shrink: 0;
@@ -367,10 +370,6 @@ p {
   gap: 6px;
 }
 
-.card-infos h4:hover {
-  text-decoration: underline;
-}
-
 .card-image {
   display: flex;
   position: relative;
@@ -392,6 +391,9 @@ p {
   top: 6px;
 }
 
+.card-infos h4:hover {
+  text-decoration: underline;
+}
 .card-image img:hover {
   filter: contrast(80%);
 }
@@ -405,7 +407,6 @@ footer {
   align-items: center;
   width: 1500px;
   height: 156px;
-  border: black solid;
   gap: 15px;
 }
 
