@@ -1,14 +1,20 @@
+/* @import "large.css" (max-width: 1184px);
+@import "medium.css" (max-width: 1024px);
+@import "small.css" (max-width: 768px); */
+
 /* GENERAL */
 body {
   background-color: #ffffff;
   font-family: "TS-Reg", sans-serif;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 main {
   width: 1136px;
 }
+
 h1 {
   font-size: 54px;
   font-family: "TS-Med", sans-serif;
@@ -425,4 +431,83 @@ footer a {
   text-decoration: none;
   color: black;
   font-family: "TS-Med", sans-serif;
+}
+
+/*RESPONSIVE*/
+
+/*BREAKPOINT AT 1184px */
+
+@media (max-width: 1184px) {
+  body {
+    width: 1168px;
+  }
+
+  .container {
+    width: 1120px;
+    padding: 0 24px;
+  }
+
+  .main-images {
+    width: 1120px;
+  }
+
+  footer {
+    width: 1184px;
+  }
+
+  .carroussel i:last-child {
+    right: -20px;
+    top: 75px;
+  }
+
+  .main-menu {
+    width: 1120px;
+    flex-wrap: wrap;
+    height: 112px;
+    justify-content: space-evenly;
+    /* border: green solid; */
+  }
+
+  /* .main-menu {
+    height: 68px;
+    display: flex;
+    justify-content: end;
+    margin: 0 auto;
+    width: 1146px;
+    font-family: "TS-Reg", sans-serif;
+  } */
+
+  .main-menu-icons-and-titles {
+    /* border: red solid; */
+    height: 48px;
+    width: 272px;
+    /* justify-content: flex-start; */
+    padding: 0 0 0 0;
+    margin: 0;
+  }
+
+  /* 
+
+  
+  .main-menu-icons-and-titles {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 181px;
+    padding: 11px 16px;
+    margin: 0 10px 0 0;
+    border: black solid 1px;
+    border-radius: 20px;
+  }
+   */
+}
+
+/*BREAKPOINT AT 1024px */
+
+@media (max-width: 1024px) {
+}
+
+/*BREAKPOINT AT 768px */
+
+@media (max-width: 768px) {
 }
